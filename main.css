@@ -1,0 +1,31 @@
+html {
+    font-size: 16px;
+    font-family: 'Roboto Mono', monospace;
+    line-height: 2;
+    padding: 1em;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section {
+    margin: 0;
+    margin-bottom: 3em;
+}
+
+ul {
+    padding-left: 1em;
+    position: relative;
+}
+
+li {
+    list-style-type: none!important;
+}
+
+li:before {
+    content: "- ";
+    position: absolute;
+    left: 0;
+}
