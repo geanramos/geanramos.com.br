@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html style="height: 100%;">
-
+<html lang="pt-br">
 <head>
   <meta name="viewport" content="width=device-width, minimum-scale=0.1">
   <title>Gean Ramos - geanramos.com.br</title>
+  <link rel="icon" href="https://cdn.jsdelivr.net/gh/geanramos/biasantos.net/favicon.ico" sizes="32,32">
+  <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/geanramos/biasantos.net/favicon.ico" />
+  <link rel="icon" sizes="16,16" href="https://cdn.jsdelivr.net/gh/geanramos/biasantos.net/favicon.ico">
   <style>
     body {
       margin: 0;
@@ -11,7 +13,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background: #303030;
+      background: #e91e63;
     }
 
     img {
@@ -20,10 +22,10 @@
       margin: auto;
       cursor: zoom-in;
       transition: background-color 300ms;
-      max-width: 100%;
-      max-height: 100%;
+      max-width: 70%;
+      max-height: 70%;
     }
-	#geanramos-com-whatsapp-button {
+	#geanramos-com-br-whatsapp-button {
     display: flex;
     position: fixed;
     background: #25d366;
@@ -37,22 +39,25 @@
     justify-content: center
 }
 
-#geanramos-com-whatsapp-button>.rwb-tooltip {
+#geanramos-com-br-whatsapp-button>.rwb-tooltip {
+    font-family: monospace;
+    font-size: small;
     position: absolute;
     bottom: 100%;
     margin-bottom: 20px;
-    border-radius: 4px;
+    border-radius: 8px;
     padding: 15px;
-    color: #ffffff;
-    font-size: 16px;
+    background: #ffffff;
+    color: #000000;
+    font-size: 12px;
     white-space: nowrap;
-    box-shadow: 2px 2px 12px rgba(0,0,0,.2);
+    box-shadow: 2px 2px 12px rgba(0,0,0,.60);
     opacity: 0;
     transition: .4s;
     pointer-events: none
 }
 
-#geanramos-com-whatsapp-button>.rwb-tooltip:after {
+#geanramos-com-br-whatsapp-button>.rwb-tooltip:after {
     display: block;
     content: "";
     position: absolute;
@@ -65,67 +70,67 @@
     transition: .4s
 }
 
-#geanramos-com-whatsapp-button.left {
+#geanramos-com-br-whatsapp-button.left {
     left: 25px
 }
 
-#geanramos-com-whatsapp-button.left>.rwb-tooltip {
+#geanramos-com-br-whatsapp-button.left>.rwb-tooltip {
     left: 0;
     transform: translateX(-10%)
 }
 
-#geanramos-com-whatsapp-button.left>.rwb-tooltip:after {
+#geanramos-com-br-whatsapp-button.left>.rwb-tooltip:after {
     left: 23px
 }
 
-#geanramos-com-whatsapp-button:not(.left) {
+#geanramos-com-br-whatsapp-button:not(.left) {
     right: 25px
 }
 
-#geanramos-com-whatsapp-button:not(.left)>.rwb-tooltip {
+#geanramos-com-br-whatsapp-button:not(.left)>.rwb-tooltip {
     right: 0;
     transform: translateX(10%)
 	font-family: sans-serif;
 }
 
-#geanramos-com-whatsapp-button:not(.left)>.rwb-tooltip:after {
+#geanramos-com-br-whatsapp-button:not(.left)>.rwb-tooltip:after {
     right: 23px
 }
 
-#geanramos-com-whatsapp-button>img {
+#geanramos-com-br-whatsapp-button>img {
     display: block;
     width: 34px;
     height: 34px
 }
 
-#geanramos-com-whatsapp-button:hover {
+#geanramos-com-br-whatsapp-button:hover {
     background: #21bd5c;
     box-shadow: 3px 3px 12px rgba(14,81,39,.4)
 }
 
-#geanramos-com-whatsapp-button:hover>.rwb-tooltip {
+#geanramos-com-br-whatsapp-button:hover>.rwb-tooltip {
     opacity: 1;
     transform: translateX(0)
 }
 
-#geanramos-com-whatsapp-button:hover>.rwb-tooltip:after {
+#geanramos-com-br-whatsapp-button:hover>.rwb-tooltip:after {
     top: 100%;
     transition-delay: .4s
 }
 
   </style>
-  <script>
+  <!--<script>
     setTimeout(function() {
-      window.location.href = "//memories.geanramos.com.br/";
-    }, 1000); // Redireciona após 5 segundos (5000 milissegundos)
-  </script> 
+      window.location.href = "./go/10.html";
+    }, 5000); // Redireciona após 20 segundos (5000 milissegundos)
+  </script>-->
 </head>
 
 <body>
-  <img src="https://unbounce.com/photos/New-banner_2x_cropped_top.png" alt="Gean Ramos">
+  <img src="https://cdn.jsdelivr.net/gh/geanramos/biasantos.net@main/img/raposa-1.svg" alt="Bia Santos">
 </body>
-<a id="geanramos-com-whatsapp-button" target="_blank" href="https://bit.ly/fno-pa-mc">
+<a id="geanramos-com-br-whatsapp-button" target="_blank" href="./go/10.html">
   <div class="rwb-tooltip">APERTE AQUI!</div>
-  <img src="https://nevoli.com.br/whatsapp-icon.svg">
+  <img src="https://cdn.jsdelivr.net/gh/geanramos/pudimperfeito/extra/whatsapp-icon.svg">
 </a>
 </html>
