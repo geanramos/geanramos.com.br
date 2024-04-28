@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <script>
+        function search() {
+            var searchTerm = document.getElementById("searchInput").value;
+            document.getElementById("searchTerm").textContent = searchTerm;
+            document.getElementById("searchTermOG").textContent = searchTerm;
+            document.getElementById("searchTermTwitter").textContent = searchTerm;
+            document.getElementById("searchTermTitle").textContent = searchTerm;
+            document.getElementById("searchTermResults").textContent = searchTerm;
+
+            // Perform search logic here and update searchResults div accordingly
+            // Example:
+            // document.getElementById("searchResults").innerHTML = "<p>Search results for " + searchTerm + " will appear here...</p>";
+        }
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>U1M Busca - Tudo sobre: <span id="searchTerm"></span></title>
@@ -50,19 +64,5 @@
         <div id="pagination"></div>
     </div>
     <footer>© 2004 - <span id="footer-date"></span> Gean - O melhor conteúdo.<span class="hide-sm"> - Todos os direitos reservados</span></footer>
-    <script>
-        function search() {
-            var searchTerm = document.getElementById("searchInput").value;
-            document.getElementById("searchTerm").textContent = searchTerm;
-            document.getElementById("searchTermOG").textContent = searchTerm;
-            document.getElementById("searchTermTwitter").textContent = searchTerm;
-            document.getElementById("searchTermTitle").textContent = searchTerm;
-            document.getElementById("searchTermResults").textContent = searchTerm;
-
-            // Perform search logic here and update searchResults div accordingly
-            // Example:
-            // document.getElementById("searchResults").innerHTML = "<p>Search results for " + searchTerm + " will appear here...</p>";
-        }
-    </script>
 </body>
 </html>
