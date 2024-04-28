@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U1M Busca - Tudo sobre: <span id="searchTerm"></span></title>
+    <meta name="description" content="O U1M Busca é um serviço de pesquisa que proporciona o fácil acesso à informação.">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:url" content="https://gean.me/busca">
+    <meta property="og:title" content="U1M Busca | Tudo sobre: <span id='searchTermOG'></span>">
+    <meta property="og:site_name" content="U1M Busca">
+    <meta property="og:description" content="O U1M Busca é um serviço de pesquisa que proporciona o fácil acesso à informação.">
+    <meta property="og:image" content="https://i1.wp.com/rockcontent.com/br/wp-content/uploads/sites/2/2019/05/site-de-busca.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="U1M Busca">
+    <meta name="twitter:title" content="U1M Busca | Tudo sobre: <span id='searchTermTwitter'></span>">
+    <meta name="twitter:description" content="O U1M Busca é um serviço de pesquisa que proporciona o fácil acesso à informação.">
+    <meta name="twitter:image" content="https://i1.wp.com/rockcontent.com/br/wp-content/uploads/sites/2/2019/05/site-de-busca.png">
+    
+    <link rel="shortcut icon" href="https://gean.me/favicon.ico">
+    <link rel="apple-touch-icon" href="https://i1.wp.com/cdn.jsdelivr.net/gh/geanramos/files/logo/7.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/geanramos/files/style-busca.css?v=1">
+</head>
+<body>
+    <h1 id="title" class="font-zero">U1M Busca - Resultados para <span id="searchTermTitle"></span></h1>
+    <div id="result" class="container uol">
+        <section class="main" id="">
+            <h1 class="font-zero">Encontre o que você procura</h1>
+            <a href="/busca" title="Voltar para página inicial">
+                <img style="height: 50px;margin: 21px 0 0;" src="https://i1.wp.com/cdn.jsdelivr.net/gh/geanramos/files/logo/7.png?resize=250,64" alt="Logo do U1M Busca" title="U1M Busca" class="logo">
+            </a>
+            <div class="search">
+                <input type="text" id="searchInput" placeholder="Digite sua pesquisa...">
+                <button onclick="search()">Pesquisar</button>
+                <div class="powered">
+                    <span>Powered by</span><img src="https://www.google.com.br/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" title="Google" alt="Google">
+                </div>
+            </div>
+        </section>
+        <section class="result-list">
+            <h1 class="font-zero">Resultados para <span id="searchTermResults"></span></h1>
+            <div id="searchResults"></div>
+        </section>
+        <section>
+            <h1 class="font-zero">Anúncios</h1>
+            <div id="ads-container-bottom"></div>
+            <div class="clear"></div>
+        </section>
+        <div id="pagination"></div>
+    </div>
+    <footer>© 2004 - <span id="footer-date"></span> Gean - O melhor conteúdo.<span class="hide-sm"> - Todos os direitos reservados</span></footer>
+    <script>
+        function search() {
+            var searchTerm = document.getElementById("searchInput").value;
+            document.getElementById("searchTerm").textContent = searchTerm;
+            document.getElementById("searchTermOG").textContent = searchTerm;
+            document.getElementById("searchTermTwitter").textContent = searchTerm;
+            document.getElementById("searchTermTitle").textContent = searchTerm;
+            document.getElementById("searchTermResults").textContent = searchTerm;
+
+            // Perform search logic here and update searchResults div accordingly
+            // Example:
+            // document.getElementById("searchResults").innerHTML = "<p>Search results for " + searchTerm + " will appear here...</p>";
+        }
+    </script>
+</body>
+</html>
